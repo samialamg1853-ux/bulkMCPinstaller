@@ -4,13 +4,6 @@ import { Button } from "@/components/ui/button";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Separator } from "@/components/ui/separator";
 import { Star, MessageCircle, Users, TrendingUp, Award, ExternalLink, Heart, Share2 } from "lucide-react";
-import type { Metadata } from "next";
-
-export const metadata: Metadata = {
-  title: "Community - MCP Directory",
-  description: "Join the MCP Directory community. Share your experiences, get help, contribute to the ecosystem, and discover the best Model Context Protocol configurations.",
-  keywords: "MCP community, Model Context Protocol community, MCP forum, MCP support, MCP contributions, AI tools community",
-};
 
 const communityStats = [
   { label: "Active Members", value: "12,847", icon: Users },

@@ -5,19 +5,6 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Badge } from "@/components/ui/badge";
 import { Star, Download, Zap, Shield, Users, ArrowRight, CheckCircle, TrendingUp } from "lucide-react";
 import Link from "next/link";
-import type { Metadata } from "next";
-
-export const metadata: Metadata = {
-  title: "MCP Directory - Setup Multiple MCPs in Minutes, Not Hours",
-  description: "The ultimate directory for Model Context Protocol configurations. Discover, bundle, and deploy verified MCPs with one-click installation. Streamline your AI workflow setup across VS Code, Cursor, Windsurf, and more.",
-  keywords: "MCP, Model Context Protocol, AI tools, automation, package manager, one-click install, AI workflow, development tools, productivity, VS Code, Cursor, Windsurf",
-  openGraph: {
-    title: "MCP Directory - Setup Multiple MCPs in Minutes",
-    description: "Discover, bundle, and deploy Model Context Protocol configurations with one-click installation",
-    type: "website",
-    url: "https://mcp-directory.com",
-  },
-};
 
 export default function Page() {
   return (
