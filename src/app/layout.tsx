@@ -1,11 +1,11 @@
 import { TempoInit } from "@/components/tempo-init";
 import { ThemeSwitcher } from "@/components/theme-switcher";
-import { PackageProvider } from "@/contexts/PackageContext";
 import { Toaster } from "@/components/ui/toaster";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import Script from "next/script";
 import "./globals.css";
+import Providers from "./providers";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -70,7 +70,7 @@ export default function RootLayout({
         />
       </head>
       <body className={inter.className}>
-        <PackageProvider>
+        <Providers>
           <div className="min-h-screen bg-background">
             <nav className="border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 sticky top-0 z-50">
               <div className="container flex h-14 items-center">
@@ -97,7 +97,7 @@ export default function RootLayout({
             {children}
           </div>
           <Toaster />
-        </PackageProvider>
+        </Providers>
         <TempoInit />
       </body>
     </html>
